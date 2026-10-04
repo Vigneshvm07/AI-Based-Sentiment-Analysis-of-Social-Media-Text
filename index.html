@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sentiment Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Sentiment<span>AI</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#analyzer">Analyzer</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="tag">AI-POWERED TEXT ANALYSIS</p>
+                <h1>Understand the <span>Emotion</span> Behind Every Word.</h1>
+                <p>
+                    Analyze social media text using AI-inspired sentiment
+                    analysis and instantly identify whether the content is
+                    Positive, Negative, or Neutral.
+                </p>
+                <a href="#analyzer" class="btn">Analyze Text</a>
+            </div>
+
+            <div class="hero-card">
+                <div class="brain">🧠</div>
+                <h3>Smart Sentiment Engine</h3>
+                <p>Real-time analysis of social media conversations.</p>
+
+                <div class="mini-stats">
+                    <div>
+                        <strong>98%</strong>
+                        <small>Accuracy</small>
+                    </div>
+                    <div>
+                        <strong>3</strong>
+                        <small>Sentiments</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="analyzer" class="section">
+            <div class="section-title">
+                <p>TEXT ANALYZER</p>
+                <h2>Analyze Social Media Text</h2>
+                <span>Enter a post, comment, review, or message below.</span>
+            </div>
+
+            <div class="analyzer-container">
+
+                <div class="input-card">
+                    <label for="textInput">Social Media Text</label>
+
+                    <textarea
+                        id="textInput"
+                        placeholder="Example: I absolutely love this product! The quality is amazing..."
+                    ></textarea>
+
+                    <div class="input-footer">
+                        <span id="charCount">0 characters</span>
+                        <button id="clearBtn" class="clear-btn">Clear</button>
+                    </div>
+
+                    <button id="analyzeBtn" class="analyze-btn">
+                        ✨ Analyze Sentiment
+                    </button>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-header">
+                        <span>ANALYSIS RESULT</span>
+                        <span id="status">Ready</span>
+                    </div>
+
+                    <div id="resultIcon" class="result-icon">
+                        😊
+                    </div>
+
+                    <h2 id="sentimentResult">Waiting for text</h2>
+
+                    <p id="resultMessage">
+                        Enter some text and click Analyze Sentiment.
+                    </p>
+
+                    <div class="confidence">
+                        <div class="confidence-top">
+                            <span>Confidence</span>
+                            <strong id="confidenceValue">0%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div id="progressBar"></div>
+                        </div>
+                    </div>
+
+                    <div class="result-details">
+                        <div>
+                            <span>Positive</span>
+                            <strong id="positiveScore">0%</strong>
+                        </div>
+
+                        <div>
+                            <span>Neutral</span>
+                            <strong id="neutralScore">0%</strong>
+                        </div>
+
+                        <div>
+                            <span>Negative</span>
+                            <strong id="negativeScore">0%</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="dashboard" class="section dashboard">
+            <div class="section-title">
+                <p>ANALYTICS</p>
+                <h2>Sentiment Dashboard</h2>
+                <span>Overview of analyzed social media content.</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <h3 id="totalAnalyzed">0</h3>
+                    <p>Total Analyzed</p>
+                </div>
+
+                <div class="stat-card positive">
+                    <div class="stat-icon">😊</div>
+                    <h3 id="positiveCount">0</h3>
+                    <p>Positive</p>
+                </div>
+
+                <div class="stat-card neutral">
+                    <div class="stat-icon">😐</div>
+                    <h3 id="neutralCount">0</h3>
+                    <p>Neutral</p>
+                </div>
+
+                <div class="stat-card negative">
+                    <div class="stat-icon">😡</div>
+                    <h3 id="negativeCount">0</h3>
+                    <p>Negative</p>
+                </div>
+            </div>
+
+            <div class="history-card">
+                <div class="history-header">
+                    <h3>Recent Analysis</h3>
+                    <button id="clearHistory">Clear History</button>
+                </div>
+
+                <div id="historyList">
+                    <p class="empty">No analysis performed yet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="section-title">
+                <p>ABOUT PROJECT</p>
+                <h2>AI-Based Sentiment Analysis</h2>
+            </div>
+
+            <div class="about-grid">
+                <div>
+                    <h3>What is Sentiment Analysis?</h3>
+                    <p>
+                        Sentiment analysis is a Natural Language Processing
+                        technique used to identify emotions and opinions
+                        expressed in text.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>How It Works</h3>
+                    <p>
+                        The system processes the entered text, identifies
+                        sentiment-related words, calculates sentiment scores,
+                        and classifies the text as Positive, Negative, or
+                        Neutral.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Applications</h3>
+                    <p>
+                        Social media monitoring, customer feedback analysis,
+                        product reviews, brand monitoring, and market research.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SentimentAI | TSA Project</p>
+        <p>AI-Based Sentiment Analysis of Social Media Text</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
